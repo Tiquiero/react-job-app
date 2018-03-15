@@ -1,14 +1,20 @@
 import React from 'react'
 import logoImg from './job.png'
-import './logo.css'
 
 export default class Logo extends React.Component{
 
 	render(){
 		return (
-			<div className="logo-container">
+			<div style={styles.logoContainer}>
 				<img src={logoImg} alt=""/>
 			</div>
 		)
+	}
+}
+
+const styles = {
+	logoContainer:{
+		margin: '50px 0 20px',
+		textAlign: 'center',
 	}
 }
